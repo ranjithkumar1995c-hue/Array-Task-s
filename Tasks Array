@@ -1,6 +1,6 @@
 public class Newarraytask {
 	
-// Task No:1
+// Task No:1 & 2.
 //	One Dimensional array
 	public static void main(String[] args) {
 //	a=[1 2 3 4 5 6]
