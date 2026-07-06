@@ -13,5 +13,38 @@ public class Newarraytask {
 	
 }}
 
+//Tasks No:3
+//Find sum of all elements.
+//public static  int sumArray(int[]arr)
+//{
+//		int sum=0;
+//		for(int num:arr) {
+//			sum+=num;
+//			
+//			return sum;
+//			
+//		}
+//}
+public static void main(String[] args) {
+ 	int arr[]= {10,20,30,40,50,60};
+	int sum=0;
+//	for (int num:arr) {
+//		sum+=num;
+//	}
+	
+	for(int i=0;i<arr.length;i++)
+	{
+		sum+=arr[i];
+	}
+	System.out.println(sum);
+//	n.findsum(10,20,30,40,50,60);
+ 
+	
+
+
+	
+}}
+(Output)=>210.
+
 (o.p)=>(1,2,3,4,5,6)
 
