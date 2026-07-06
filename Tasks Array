@@ -82,6 +82,7 @@ Average=>35.0
 			}
 		}
 		System.out.println(max);
+(OUTPUT)=>6
 		    
 		
 	
