@@ -224,3 +224,30 @@ public static void main(String[] args) {
 		}
 }}	
 (OUTPUT)=>15.
+// Task No:13
+//Find second smallest element.
+	public static void main(String[] args) {
+	int[]arr= {10,5,30,15,50};
+	int smallest=Integer.MAX_VALUE;
+	int secondsmallest=Integer.MAX_VALUE;
+	for(int num:arr) {
+		if(num<smallest) {
+			secondsmallest=smallest;
+			smallest =num;
+		}
+		else if(num>secondsmallest&& num!=smallest);{
+			smallest=num;
+		}
+	
+	}
+	if(secondsmallest==Integer.MAX_VALUE)
+	{
+		System.out.println("secondsmallest  Element does not exist");
+	}
+	else
+	{
+		System.out.println("Secondsmallest Element:"+secondsmallest);
+	}
+	
+}}	
+(OUTPUT)=>30.
