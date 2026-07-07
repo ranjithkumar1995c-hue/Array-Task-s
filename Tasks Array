@@ -269,3 +269,26 @@ public static void main(String[] args) {
 	
 }}	
 (OUTPUT)=>(1 2 3 4 5).
+
+//Task No:16
+//Check if array is palindrome.
+	public static boolean ispalindrome(String arr) {
+		int left=0;
+		int right=arr.length()-1;
+		while(left<right) {
+			if(arr.charAt(left)!=arr.charAt(right)) {
+				return false;
+			}
+			left++;
+			right--;
+			}
+		return true;
+		}
+		
+
+public static void main(String[] args) {
+	System.out.println(ispalindrome("rotor"));
+	System.out.println(ispalindrome("welcome"));
+	
+}}	
+(OUTPUT)-true,false.
