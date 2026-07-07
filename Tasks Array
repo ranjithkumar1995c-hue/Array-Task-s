@@ -302,3 +302,20 @@ public static void main(String[] args) {
 	}
 	System.out.println(freq);
 	(OUTPUT)=>{1=2, 2=3, 3=1, 4=1}.
+// Task No:17
+//Find common elements between two arrays.
+	public static void main(String[] args) {
+		int []arr1= {10,20,30,40,50};
+		int []arr2= {50,20,45,30,76};
+		
+    	set <integer> set=new Hashset<>();
+		set <integer> common=new Hashset<>();
+		for(int num:arr1) {
+			if(set.contains(num)) {
+				common.add(num);
+			}
+		}
+	    System.out.println(common);
+	
+}}	
+(OUTPUT)=>(20,30,50).
