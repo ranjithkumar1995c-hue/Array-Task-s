@@ -413,3 +413,20 @@ sum of column2=18.
 	
 }}	
 (OUTPUT)=>(3,6).
+//Task No:24.
+//Find minimum element.
+	public static void main(String[] args) {
+		int a[][]= {{1,2,3},{4,5,6}};
+		int min=0;
+		for(int i=0;i<a.length;i++) {
+			for(int j=0;j<a[i].length;j++) {
+			if(a[i][j]>min)
+			{
+				min=a[i][j];
+			}
+			}
+			System.out.println(min);
+		}
+	
+}}	
+(OUTPUT)=>(3,6).
