@@ -787,3 +787,72 @@ printSpiralTraversal(matrix);
 7
 11 
 10 .
+// Task No:38.
+// Rotate matrix 90 degrees.
+	public static void main(String[] args) {
+		 
+		Scanner sc=new Scanner(System.in);
+		int [][]arr=new int[3][3];
+		System.out.println("Enter array values:");
+		for(int i=0;i<arr.length;i++) {
+			for(int j=0;j<arr[i].length;j++) {
+				 
+				System.out.println("Enter array for row"+i+" and column"+j);
+				arr[i][j]=sc.nextInt();
+				
+			}
+		}
+			for(int i=0;i<arr.length;i++) {
+				for(int j=0;j<arr[i].length;j++) {
+					 
+ 					
+ 							
+ 					System.out.print(arr[i][j]+" " );
+					
+				}
+				
+				System.out.println();
+			
+		}
+			
+			System.out.println("Rotate matrix 90degrees: ");
+			for(int i=0;i<arr.length;i++) {
+				for(int j=0;j>arr[i].length;j--) {
+					 
+ 					
+ 							
+ 					System.out.print(arr[j][i]+" " );
+					
+				}
+				
+				System.out.println();
+			
+		}
+		
+}}
+(OUTPUT)=>Enter array values:
+Enter array for row0 and column0
+4
+Enter array for row0 and column1
+5
+Enter array for row0 and column2
+6
+Enter array for row1 and column0
+8
+Enter array for row1 and column1
+5
+Enter array for row1 and column2
+7
+Enter array for row2 and column0
+3
+Enter array for row2 and column1
+6
+Enter array for row2 and column2
+9
+4 5 6 
+8 5 7 
+3 6 9 
+Rotate matrix 90degrees: 
+
+
+
