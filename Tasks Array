@@ -619,3 +619,30 @@ Transpose Matrix:
 	
 	}}
 (OUTPUT)=>(58).
+//Task No:34.
+//Check if matrix is upper triangular.
+	public static boolean isuppertriangular(int [][]matrix) {
+		int n=matrix.length;
+		for(int[]row:matrix) {
+			if(row.length!=n) {
+				return false;
+			}
+		}
+	
+	for(int i=1;i<n;i++) {
+		for(int j=0;j<i;j++) {
+			if(matrix[i][j]!=0) {
+				return false;
+			}}}
+	return true;
+	}
+	public static void main(String[] args) {
+		int[][]matrix= {
+				{1,2,3},
+				{0,4,5},
+				{0,0,6}
+		};
+		System.out.println(isuppertriangular(matrix));
+			
+	}}
+(OUTPUT)=>True.
