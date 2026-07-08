@@ -545,4 +545,19 @@ sum of column2=18.
 Transpose Matrix: 
 3 3 3 
 2 2 2 
-1 1 1 
+1 1 1 .
+//Task No:29.
+//Add two matrices.
+	public static void main(String[] args) {
+        int arr1[][]= {{1,2},{2,3}};
+		int arr2[][]= {{4,5},{6,8}};
+		int sum=0;
+		for(int i=0;i<arr1.length;i++) {
+				for(int j=0;j<arr1[i].length;j++){
+					sum=arr1[i][j]+arr2[i][j];
+			}
+				System.out.print(sum);
+		}
+	    
+	}}
+(OUTPUT)=>711.
