@@ -604,3 +604,18 @@ Transpose Matrix:
 	
 	}}
 (OUTPUT)=>(58).
+// Task No:33.
+//Check if matrix is identity.
+	public static void main(String[] args) {
+      int arr1[][]= {{1,2},{2,3}};
+		int arr2[][]= {{4,5},{6,8}};
+		int idn=0;
+		for(int i=0;i<arr1.length;i++) {
+				for(int j=0;j<arr1[i].length;j++){
+					idn=arr1[i][j]=arr2[i][j];
+			}
+				System.out.print(idn);
+		}
+	
+	}}
+(OUTPUT)=>(58).
