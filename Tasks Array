@@ -673,3 +673,59 @@ Transpose Matrix:
 	
 	}}
 (OUTPUT)=>True.
+//Task No:36.
+//Find determinant (2x2 matrix).
+	public static void main(String[] args) {
+		 
+		Scanner sc=new Scanner(System.in);
+		int [][]arr=new int[2][2];
+		System.out.println("Enter array values:");
+		for(int i=0;i<arr.length;i++) {
+			for(int j=0;j<arr[i].length;j++) {
+				 
+				System.out.println("Enter array for row"+i+" and column"+j);
+				arr[i][j]=sc.nextInt();
+				
+			}
+		}
+			for(int i=0;i<arr.length;i++) {
+				for(int j=0;j<arr[i].length;j++) {
+					 
+ 					
+ 							
+ 					System.out.print(arr[i][j]+" " );
+					
+				}
+				
+				System.out.println();
+			
+		}
+			
+			System.out.println("determine (2*2) Matrix: ");
+			for(int i=2;i<arr.length;i++) {
+				for(int j=2;j<arr[i].length;j++) {
+					 
+ 					
+ 							
+ 					System.out.print(arr[2*i][2*j]+" " );
+					
+				}
+				
+				System.out.println();
+			
+		}
+	
+	
+	}}
+(OUTPUT)=>Enter array values:
+Enter array for row0 and column0
+2
+Enter array for row0 and column1
+4
+Enter array for row1 and column0
+6
+Enter array for row1 and column1
+8
+2 4 
+6 8 
+determine (2*2) Matrix: 
