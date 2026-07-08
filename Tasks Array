@@ -498,3 +498,51 @@ sum of column2=18.
 		System.out.println(issquarematrix(b));
 	}}
 (OUTPUT)=>(true,False).
+//Task No:28
+//Transpose of matrix.
+	public static void main(String[] args) {
+		 
+		Scanner sc=new Scanner(System.in);
+		int [][]arr=new int[3][3];
+		System.out.println("Enter array values:");
+		for(int i=0;i<arr.length;i++) {
+			for(int j=0;j<arr[i].length;j++) {
+				 
+				System.out.println("Enter array for row"+i+" and column"+j);
+				arr[i][j]=sc.nextInt();
+				
+			}
+		}
+			for(int i=0;i<arr.length;i++) {
+				for(int j=0;j<arr[i].length;j++) {
+					 
+ 					
+ 							
+ 					System.out.print(arr[i][j]+" " );
+					
+				}
+				
+				System.out.println();
+			
+		}
+			
+			System.out.println("Transpose Matrix: ");
+			for(int i=0;i<arr.length;i++) {
+				for(int j=0;j<arr[i].length;j++) {
+					 
+ 					
+ 							
+ 					System.out.print(arr[j][i]+" " );
+					
+				}
+				
+				System.out.println();
+}
+}}.
+(OUTPUT)=>3 2 1 
+3 2 1 
+3 2 1 
+Transpose Matrix: 
+3 3 3 
+2 2 2 
+1 1 1 
