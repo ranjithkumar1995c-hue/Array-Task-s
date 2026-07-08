@@ -646,3 +646,30 @@ Transpose Matrix:
 			
 	}}
 (OUTPUT)=>True.
+//Task No:35.
+//Check if matrix is lower triangular.
+	public static boolean islowertriangular(int [][]matrix) {
+		int n=matrix.length;
+		for(int[]row:matrix) {
+			if(row.length!=n) {
+				return false;
+			}
+		}
+	
+	for(int i=0;i<n;i++) {
+		for(int j=i+1;j<n;j++) {
+			if(matrix[i][j]!=0) {
+				return false;
+			}}}
+	return true;
+	}
+	public static void main(String[] args) {
+		int[][]matrix= {
+				{1,0,0},
+				{6,4,0},
+				{7,8,6}
+		};
+		System.out.println(islowertriangular(matrix));
+	
+	}}
+(OUTPUT)=>True.
